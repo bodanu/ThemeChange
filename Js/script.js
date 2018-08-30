@@ -3,15 +3,31 @@ $("document").ready(function(){
     $("#one").click(function(){
         $("#img-container").toggleClass("alt-img-container")
         $("#wrapper").toggleClass("alt-wrapper")
-        $("#big-title").text("Second theme!")
+       /// $("#big-title").text("Second theme!")
         $("#wrapper").toggleClass("alt-wraper")
         $(".content-container").toggleClass("alt-content-container")
         $("#aricle1").toggleClass("alt-aricle1")
         $("#article2").toggleClass("alt-article2")
         $("#article3").toggleClass("alt-article3")
-        $(".small-title").text("Second article format")
+       ///// $(".small-title").text("Second article format")
+        
     });
-
+    $("#one").click(function(){ 
+       var x = document.getElementById('small-title');
+       if (x.innerHTML === "Original article format") {
+           x.innerHTML = "Second article format";
+       } else {
+           x.innerHTML = "Original article format";
+       }
+    });
+    $("#one").click(function(){ 
+        var y = document.getElementById('big-title');
+        if (y.innerHTML === "Original interface") {
+            y.innerHTML = "Second theme!";
+        } else {
+            y.innerHTML = "Original interface";
+        }
+     });
     $("#two").click(function(){
         $("#article2").toggleClass("yellow")
     });

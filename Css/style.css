@@ -72,6 +72,7 @@ body {
     padding: 10px;
     box-shadow: var(--shadow);
     text-align: center;
+    background-color: rgba(7, 112, 107, 0.836);
 }
 .article2{
     grid-column: 2;
@@ -83,6 +84,7 @@ body {
 .alt-article2 {
     grid-column: 1 / 4;
     grid-row: 3;
+    background-color: rgba(7, 112, 107, 0.836);
 }
 .article3{
     grid-column: 3;
@@ -94,6 +96,7 @@ body {
 .alt-article3 {
     grid-column: 1 / 4;
     grid-row: 4;
+    background-color: rgba(7, 112, 107, 0.836);
 }
 .footer{
     display: block;
@@ -101,6 +104,8 @@ body {
     padding: 10px;
     text-align: center;
     grid-column: 1 / 4;
+    background-color: rgb(60, 136, 83);
+    box-shadow: var(--shadow);
 }
 .btn-container ul {
     list-style: none;
