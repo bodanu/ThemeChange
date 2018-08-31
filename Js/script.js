@@ -9,6 +9,7 @@ $("document").ready(function(){
         $("#aricle1").toggleClass("alt-aricle1")
         $("#article2").toggleClass("alt-article2")
         $("#article3").toggleClass("alt-article3")
+        $(".btn-container").toggleClass("alt-btn-container")
        ///// $(".small-title").text("Second article format")
         
     });
@@ -42,7 +43,7 @@ $("document").ready(function(){
         $("#aricle1").removeClass("yellow brown").addClass("aricle1")
         $("#article3").removeClass("yellow brown").addClass("article3")
         $("#big-title").text("Original interface")
-        $(".small-title").text("Originalarticle format")
+        $(".small-title").text("Original article format")
     });
 
 });
