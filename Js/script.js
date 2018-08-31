@@ -30,8 +30,28 @@ $("document").ready(function(){
         }
      });
     $("#two").click(function(){
-        $("#article2").toggleClass("yellow")
+        $(".wrapper").toggleClass("alt-wrapper2")
+        $(".btn-container").toggleClass("alt-btn-container2")
+        $("a, #one, #two, #three, #four").toggleClass("alt-btn-container-li")
+        $("#img-container").toggleClass("alt-img-container2")
     });
+
+    $("#two").click(function(){ 
+        var x = document.getElementById('small-title');
+        if (x.innerHTML === "Original article format") {
+            x.innerHTML = "Third article format";
+        } else {
+            x.innerHTML = "Original article format";
+        }
+     });
+     $("#two").click(function(){ 
+         var y = document.getElementById('big-title');
+         if (y.innerHTML === "Original interface") {
+             y.innerHTML = "Third Theme";
+         } else {
+             y.innerHTML = "Original interface";
+         }
+      });
 
     $("#three").on('click', function(){
         $("#article2, #article3").removeClass("article2").addClass("brown yellow")
