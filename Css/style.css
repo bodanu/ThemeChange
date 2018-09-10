@@ -13,6 +13,9 @@ body {
     line-height: 1.4;
     background-color: lightgray;
 }
+::-webkit-scrollbar {
+    width: 0;
+}
 .wrapper {
     display: grid;
     grid-gap: 30px;
